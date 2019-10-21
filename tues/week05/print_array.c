@@ -1,0 +1,35 @@
+// print_array.c
+// By tue11-kora
+// 15/10/19
+// A program to print an array
+
+#include <stdio.h>
+
+#define ARRAY_SIZE 5
+
+void print_array(int n, int nums[n]);
+
+int main(void) {
+    int nums[ARRAY_SIZE] = {2, 3, 4, 6, 1};
+    
+    print_array(ARRAY_SIZE, nums);
+    
+    return 0;
+}
+
+void print_array(int n, int nums[n]) {
+    printf("[");
+    
+    int i = 0;
+    while (i < n) {
+        printf("%d", nums[i]);
+        
+        if (i != n-1) {
+            printf(", ");
+        }
+        
+        i++;
+    }
+    
+    printf("]\n");
+}

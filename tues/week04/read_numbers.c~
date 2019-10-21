@@ -1,0 +1,22 @@
+// read_numbers.c
+// By tue11-kora
+// 8/10/2019
+// A program to read numbers until getting a non-number
+
+#include <stdio.h>
+
+#define EXPECTED_INPUTS 2
+
+int main(void) {
+    int first_input;
+    int second_input;
+    
+    int result = scanf("%d %d", &first_input, &second_input);
+    // Keep reading until we don't get two number
+    while (result == EXPECTED_INPUTS) {
+        printf("%d %d\n", second_input, first_input);
+        result = scanf("%d %d", &first_input, &second_input);
+    }
+
+    return 0;
+}
