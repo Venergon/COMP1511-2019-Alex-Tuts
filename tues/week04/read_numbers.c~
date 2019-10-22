@@ -12,7 +12,7 @@ int main(void) {
     int second_input;
     
     int result = scanf("%d %d", &first_input, &second_input);
-    // Keep reading until we don't get two number
+    // Keep reading until we don't get two numbers
     while (result == EXPECTED_INPUTS) {
         printf("%d %d\n", second_input, first_input);
         result = scanf("%d %d", &first_input, &second_input);
