@@ -1,0 +1,7 @@
+#include "list.h"
+
+int main(void) {
+    List list = NULL;
+    
+    printf("%d\n", list->data);
+}
